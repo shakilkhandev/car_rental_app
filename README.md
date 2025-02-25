@@ -1,26 +1,24 @@
-# 🚗 Car Renting System
+# 🚗 Car Rental Management System
 
-A complete **Car Renting System** built using **Laravel**, **Vue.js**, and **Inertia.js**. This monolithic project offers seamless car rental management for customers and admins, ensuring a smooth and efficient experience.
-
-project presentation video: https://drive.google.com/file/d/1Fb_TQjECz7ScSpGe3-h8S2mpW3Ej7SUU/view?usp=sharing
+A **Car Rental Management System** built using **Laravel**, **Vue.js**, and **Inertia.js**. This full-featured platform provides a seamless experience for customers to rent cars and for admins to manage rentals efficiently.
 
 ## 📌 Features
 
-### 🧑‍💼 Customer
-- **Car Rental Creation**: Customers can rent a car by creating a rental request. The request includes the car name, rental duration , and additional data. After submitting the request, confirmation email will be sent to the customer. 
-- **Authentication**: Secure login and registration for customers.
-- **Access Control**: Customers must be logged in to create a rental.
-- **Rental Tracking**: Customers can track their rental status from the dashboard.
-- **Profile Management**: Update personal information from the profile section.
+### 🧑‍💼 Customers
+- **Car Rental Request**: Users can submit rental requests, including car selection, rental duration, and additional details. A confirmation email is sent after submission.
+- **Secure Authentication**: Registration and login functionality.
+- **Access Control**: Rentals can only be created by logged-in users.
+- **Rental Status Tracking**: Users can monitor their rental progress via the dashboard.
+- **Profile Management**: Customers can update personal details in their profile.
 
-### 👨‍💻 Admin
-- **Admin Authentication**: Secure login for admin (No registration allowed).
-- **Car Management**: Create, edit, and delete cars available for rent.
-- **Rental Management**: Track and update customer rental statuses.
-- **Custom Rental Creation**: Admin can manually create rentals for customers.
-- **View Rental History**: Access complete customer rental histories.
+### 👨‍💻 Admin Panel
+- **Admin Authentication**: Only login access (no registration for admins).
+- **Car Management**: Add, edit, and remove cars from the rental inventory.
+- **Rental Oversight**: Admins can monitor and update rental statuses.
+- **Manual Rental Creation**: Ability to create rental requests on behalf of customers.
+- **Rental History Review**: Access detailed rental records.
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 - **Backend**: Laravel (PHP Framework)
 - **Frontend**: Vue.js (Modern JavaScript Framework)
@@ -28,15 +26,15 @@ project presentation video: https://drive.google.com/file/d/1Fb_TQjECz7ScSpGe3-h
 - **Database**: MySQL
 - **Package Management**: Composer & npm
 
-## 🚀 Installation Guide
+## 🚀 Installation Steps
 
-1. **Clone the Repository:**
+1. **Clone the Project:**
 ```bash
-git clone https://github.com/sajidimon/car_rental.git
+git clone https://github.com/shakilkhandev/car_rental.git
 cd car_rental
 ```
 
-2. **Set up Environment:**
+2. **Set Up Environment:**
 ```bash
 cp .env.example .env
 php artisan key:generate
@@ -48,8 +46,8 @@ composer install
 npm install
 ```
 
-4. **Database Configuration:**
-- Update `.env` with your database credentials.
+4. **Configure Database:**
+- Update `.env` with the database credentials.
 
 ```env
 DB_DATABASE=your_database_name
@@ -57,28 +55,39 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-6. **Build Frontend:**
+5. **Build Frontend:**
 ```bash
 npm run build
 ```
 
-7. **Start the Application:**
+6. **Run the Application:**
 ```bash
 php artisan serve
 ```
 
-## 📄 Usage
+For admin login : use route: http://127.0.0.1:8000/admin/login
 
-1. Customers must register and log in to rent a car.
-2. Admins manage cars and track customer rentals.
-3. Admins can update the status of a rental (e.g., Pending, Ongoing, Completed).
-4. Users can update their profiles and track their rental status.
+email:shakilkhanfv@gmail.com
+password : 123456
+
+for customer side login :
+
+email:customer@gmail.com
+pass: 123456
+
+
+## 📄 How It Works
+
+1. Customers sign up and log in to rent a car.
+2. Admins manage car listings and oversee rentals.
+3. Rental statuses (e.g., Pending, Ongoing, Completed) can be updated by admins.
+4. Users can modify profiles and track their rental status.
 
 ## 📊 Project Structure
 
 ```
-├── app/          # Laravel Backend
-├── resources/    # Vue.js Frontend
+├── app/          # Backend (Laravel)
+├── resources/    # Frontend (Vue.js)
 ├── routes/       # Web Routes
 └── database/     # Migrations
 ```
@@ -88,9 +97,9 @@ php artisan serve
 Contributions are welcome! Feel free to submit a Pull Request or open an issue.
 
 ## 📧 Contact
-For questions or feedback, reach out to: [arifulislam6460@gmail.com](arifulislam6460@gmail.com)
+For inquiries or feedback, reach out at: [shakilkhanfv@gmail.com]    (mailto:shakilkhanfv@gmail.com)
 
 ---
 
-**© 2025 Car Renting System: CODEARIF - Built with Laravel, Vue.js, and Inertia.js**
+**© 2025 Car Rental Management System - Built with Laravel, Vue.js, and Inertia.js**
 
