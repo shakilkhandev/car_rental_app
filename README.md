@@ -78,6 +78,8 @@ pass: 123456
 
 ## 📄 How It Works
 
+##video:: https://drive.google.com/file/d/1Nv2kA3pgZL1TL8eE4bLH6MGdx_l-7tTt/view?usp=sharing
+
 1. Customers sign up and log in to rent a car.
 2. Admins manage car listings and oversee rentals.
 3. Rental statuses (e.g., Pending, Ongoing, Completed) can be updated by admins.
